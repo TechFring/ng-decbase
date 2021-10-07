@@ -1,0 +1,36 @@
+@import "../../../styles/pallete";
+
+.project {
+  display: flex;
+  padding-top: 150px;
+
+  @media (max-width: 480px) {
+    display: block;
+  }
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-right: 64px;
+
+  button {
+    margin-top: 32px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0px;
+  }
+}
+
+.background-after {
+  flex: 1;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}

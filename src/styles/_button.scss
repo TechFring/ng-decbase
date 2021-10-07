@@ -1,0 +1,56 @@
+%btn {
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+@mixin factory-btn($background, $color: $white) {
+  @extend %btn;
+
+  height: 33px;
+  padding: 0px 19px;
+  border-radius: 15px 0px 15px;
+
+  background: $background;
+  color: $color;
+
+  &:hover {
+    background: darken($background, 7%);
+  }
+}
+
+@mixin factory-btn-icon($background, $color: $white) {
+  @extend %btn;
+
+  height: 37px;
+  width: 37px;
+  background: $background;
+  color: $color;
+  border-radius: 100%;
+  font-size: 1.2rem;
+
+  &:hover {
+    background: darken($background, 7%);
+  }
+}
+
+.btn-brown {
+  @include factory-btn($brown);
+}
+
+.btn-green {
+  @include factory-btn($green);
+  height: 38px;
+}
+
+.btn-icon-gray {
+  @include factory-btn-icon($gray);
+}
+
+.btn-icon-green {
+  @include factory-btn-icon($green);
+}

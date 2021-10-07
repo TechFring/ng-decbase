@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $black-light;
+  font-size: 1.1rem;
+}
+
+ul {
+  font-size: 0.9rem;
+}
+
+ul {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: $black;
+}
+
+h1 {
+  font-size: 3.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* CLASSES */
+.pre-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: $black-light;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.text-green {
+  color: $green;
+}

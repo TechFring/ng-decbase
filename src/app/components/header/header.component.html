@@ -1,0 +1,80 @@
+<header class="header" #header>
+  <nav class="nav container">
+    <ul>
+      <li role="link" routerLink="" class="logo">
+        <img src="/assets/images/logo.png" />
+      </li>
+
+      <li
+        role="link"
+        routerLink="/"
+        class="nav-item"
+        [ngClass]="{ active: currFragment == null }"
+      >
+        HOME
+      </li>
+
+      <li
+        role="link"
+        routerLink="/"
+        fragment="project"
+        class="nav-item"
+        [ngClass]="{ active: currFragment == 'project' }"
+      >
+        PROJECT
+      </li>
+
+      <li
+        role="link"
+        routerLink="/"
+        fragment="services"
+        class="nav-item"
+        [ngClass]="{ active: currFragment == 'services' }"
+      >
+        SERVICES
+      </li>
+
+      <li
+        role="link"
+        routerLink="/"
+        fragment="about"
+        class="nav-item"
+        [ngClass]="{ active: currFragment == 'about' }"
+      >
+        ABOUT
+      </li>
+
+      <li
+        role="link"
+        routerLink="/"
+        fragment="blog"
+        class="nav-item"
+        [ngClass]="{ active: currFragment == 'blog' }"
+      >
+        BLOG
+      </li>
+
+      <li
+        role="link"
+        routerLink="/"
+        fragment="shop"
+        class="nav-item"
+        [ngClass]="{ active: currFragment == 'shop' }"
+      >
+        SHOP
+      </li>
+
+      <li
+        role="link"
+        routerLink="/"
+        fragment="contact"
+        class="nav-item"
+        [ngClass]="{ active: currFragment == 'contact' }"
+      >
+        CONTACT
+      </li>
+
+      <li role="button" class="sign-up btn-brown">Sign Up</li>
+    </ul>
+  </nav>
+</header>

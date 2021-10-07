@@ -1,0 +1,28 @@
+.services {
+  padding-top: 126px;
+
+  @media(max-width: 480px) {
+    padding-top: 96px;
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+
+  div + div {
+    align-self: flex-start;
+    margin-left: 37px;
+  }
+
+  @media(max-width: 480px) {
+    display: block;
+    margin-top: 16px;
+
+    div + div {
+      margin: 24px 0 0;
+    }
+  }
+}

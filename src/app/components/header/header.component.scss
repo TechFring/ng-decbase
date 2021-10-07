@@ -1,0 +1,62 @@
+@import "../../../styles/styles.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
+  z-index: 100;
+  padding-top: 34px;
+  transition: all 0.4s;
+
+  &.min {
+    padding-top: 0px;
+    box-shadow: 0 5px 5px -5px $black-light;
+  }
+
+  @media(max-width: 480px) {
+    .nav-item {
+      display: none;
+    }
+  }
+}
+
+.nav {
+  ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.nav-item {
+  font-weight: 600;
+  transform: 0.5s color;
+
+  &.active,
+  &:hover {
+    color: $black;
+  }
+
+  & + & {
+    margin-left: 32px;
+  }
+}
+
+.logo {
+  margin-right: auto;
+
+  img {
+    width: 110px;
+  }
+}
+
+.sign-up {
+  margin-left: 64px;
+}

@@ -1,0 +1,40 @@
+.blog {
+  padding: 100px 0px 100px 60px;
+
+  .pre-title,
+  .title {
+    text-align: center;
+  }
+
+  .title {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 64px 16px;
+
+    .title {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+
+  .card-white {
+    width: 100%;
+    max-width: 450px;
+    padding-bottom: 24px;
+  }
+
+  @media (max-width: 480px) {
+    flex-wrap: wrap;
+    padding-left: 28px;
+
+    .card-white + .card-white {
+      margin-top: 24px;
+    } 
+  }
+}
