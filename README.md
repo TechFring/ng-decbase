@@ -19,7 +19,7 @@
 
 ## 💻 Demo
 
-<a href="https://ng-decbase-2d7bi8gpm-techfring.vercel.app/">https://ng-decbase-2d7bi8gpm-techfring.vercel.app/</a>
+<a href="https://ng-decbase.vercel.app/">https://ng-decbase.vercel.app/</a>
 
 <br />
 
